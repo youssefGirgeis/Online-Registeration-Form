@@ -13,15 +13,44 @@ body {
   text-align: center;
 }
 .header-title {
-  background: #333;
+  background: #393f39;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   padding: 1.1rem 2rem;
   font-size: 1.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 2 px;
+  margin-bottom: 1.1rem;
+}
+
+.header h2 {
+  margin-bottom: 0.5rem;
 }
 
 .intro {
   color: #a5a5a5;
+}
+
+fieldset {
+  border: none;
+}
+
+.legend {
+  font-weight: bold;
+}
+
+input[placeholder] {
+  text-align: right;
+}
+
+.contact-info > input {
+  background: #eee;
+  display: block;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
