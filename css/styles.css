@@ -8,8 +8,12 @@ body {
   font-family: "lato", sans-serif;
 }
 
+form {
+  padding: 1rem;
+}
+
 .header {
-  margin: 1rem 1rem;
+  padding: 1rem;
   text-align: center;
 }
 .header-title {
@@ -31,23 +35,45 @@ body {
   color: #a5a5a5;
 }
 
+hr {
+  background: #393f39;
+
+  width: 95%;
+  margin: 0 auto;
+}
+
+.thick-hr {
+  height: 6px;
+  margin-bottom: 2px;
+}
+
+.thin-hr {
+  height: 3px;
+}
+
 fieldset {
   border: none;
 }
 
 .legend {
   font-weight: bold;
+  margin-bottom: 1.1rem;
+  font-size: 1.2rem;
 }
 
 input[placeholder] {
   text-align: right;
+  font-style: italic;
 }
 
-.contact-info > input {
+.contact-info > input,
+#state {
   background: #eee;
   display: block;
   padding: 0.8rem;
   width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 label {
