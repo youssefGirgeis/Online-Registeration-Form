@@ -64,48 +64,70 @@
         <input type="text" id="zipcode" name="zipcode" />
       </fieldset>
 
+      <hr class="thin-hr" />
+
       <fieldset class="newsletter">
         <legend class="legend">NewsLetter</legend>
 
-        <label>Select the newsletters you would like to receive</label>
-        <input
-          type="checkbox"
-          value="html_news"
-          id="html-news"
-          name="newsletter"
-          checked
-        /><label for="html-news">HTML News</label>
+        <label class="newsletter-label"
+          >Select the newsletters you would like to receive</label
+        >
+        <div>
+          <input
+            type="checkbox"
+            value="html_news"
+            id="html-news"
+            name="newsletter"
+            checked
+          /><label for="html-news">HTML News</label>
+        </div>
 
-        <input
-          type="checkbox"
-          value="css_news"
-          id="css-news"
-          name="newsletter"
-        />
-        <label for="css-news">CSS News</label>
+        <div>
+          <input
+            type="checkbox"
+            value="css_news"
+            id="css-news"
+            name="newsletter"
+          />
+          <label for="css-news">CSS News</label>
+        </div>
 
-        <input
-          type="checkbox"
-          value="javascript_news"
-          id="js-news"
-          name="newsletter"
-        />
-        <label for="js-news">JavaScript News</label><br />
+        <div class="last-div">
+          <input
+            type="checkbox"
+            value="javascript_news"
+            id="js-news"
+            name="newsletter"
+          />
+          <label for="js-news">JavaScript News</label>
+        </div>
 
-        <label>NewsLetter format</label>
-        <input type="radio" id="html" value="html" name="news_format" checked />
-        <label for="html">HTML</label>
+        <label class="newsletter-label">NewsLetter format</label>
 
-        <input
-          type="radio"
-          id="plain-text"
-          value="plain_text"
-          name="news_format"
-        />
-        <label for="plain-text">Plain text</label><br />
+        <div>
+          <input
+            type="radio"
+            id="html"
+            value="html"
+            name="news_format"
+            checked
+          />
+          <label for="html">HTML</label>
+        </div>
 
-        <label for="other-topics">Other topics you'd like to hear about</label
-        ><br />
+        <div class="last-div">
+          <input
+            type="radio"
+            id="plain-text"
+            value="plain_text"
+            name="news_format"
+          />
+          <label for="plain-text">Plain text</label>
+        </div>
+
+        <label for="other-topics" class="newsletter-label"
+          >Other topics you'd like to hear about</label
+        >
         <textarea name="other_topics" id="other-topics"></textarea>
       </fieldset>
 
