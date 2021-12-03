@@ -23,116 +23,118 @@
       </p>
     </header>
 
-    <hr class="thick-hr" />
-    <hr class="thin-hr" />
-
-    <form action="index.html" method="post">
-      <fieldset class="contact-info">
-        <legend class="legend">Contact Information</legend>
-
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          id="full-name"
-          name="full_name"
-          placeholder="Required"
-        />
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Required" />
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" />
-
-        <label for="street">Street Address</label>
-        <input type="text" id="street" name="street_address" />
-
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" />
-
-        <label for="state">State</label>
-        <select name="state" id="state">
-          <option hidden>Choose State</option>
-          <option value="california">California</option>
-          <option value="texas">Texas</option>
-          <option value="florida">Florida</option>
-          <option value="hawaii">Hawaii</option>
-          <option value="virginia">Virginia</option>
-        </select>
-
-        <label for="zipcode">Zip Code</label>
-        <input type="text" id="zipcode" name="zipcode" />
-      </fieldset>
-
+    <div class="container">
+      <hr class="thick-hr" />
       <hr class="thin-hr" />
 
-      <fieldset class="newsletter">
-        <legend class="legend">NewsLetter</legend>
+      <form action="index.html" method="post">
+        <fieldset class="contact-info">
+          <legend class="legend">Contact Information</legend>
 
-        <label class="newsletter-label"
-          >Select the newsletters you would like to receive</label
-        >
-        <div>
+          <label for="full-name">Full Name</label>
           <input
-            type="checkbox"
-            value="html_news"
-            id="html-news"
-            name="newsletter"
-            checked
-          /><label for="html-news">HTML News</label>
-        </div>
-
-        <div>
-          <input
-            type="checkbox"
-            value="css_news"
-            id="css-news"
-            name="newsletter"
+            type="text"
+            id="full-name"
+            name="full_name"
+            placeholder="Required"
           />
-          <label for="css-news">CSS News</label>
-        </div>
 
-        <div class="last-div">
-          <input
-            type="checkbox"
-            value="javascript_news"
-            id="js-news"
-            name="newsletter"
-          />
-          <label for="js-news">JavaScript News</label>
-        </div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Required" />
 
-        <label class="newsletter-label">NewsLetter format</label>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
 
-        <div>
-          <input
-            type="radio"
-            id="html"
-            value="html"
-            name="news_format"
-            checked
-          />
-          <label for="html">HTML</label>
-        </div>
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street_address" />
 
-        <div class="last-div">
-          <input
-            type="radio"
-            id="plain-text"
-            value="plain_text"
-            name="news_format"
-          />
-          <label for="plain-text">Plain text</label>
-        </div>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" />
 
-        <label for="other-topics" class="newsletter-label"
-          >Other topics you'd like to hear about</label
-        >
-        <textarea name="other_topics" id="other-topics"></textarea>
-      </fieldset>
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option hidden>Choose State</option>
+            <option value="california">California</option>
+            <option value="texas">Texas</option>
+            <option value="florida">Florida</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="virginia">Virginia</option>
+          </select>
 
-      <button type="submit">Sign Up</button>
-    </form>
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="zipcode" />
+        </fieldset>
+
+        <hr class="thin-hr" />
+
+        <fieldset class="newsletter">
+          <legend class="legend">NewsLetter</legend>
+
+          <label class="newsletter-label"
+            >Select the newsletters you would like to receive</label
+          >
+          <div>
+            <input
+              type="checkbox"
+              value="html_news"
+              id="html-news"
+              name="newsletter"
+              checked
+            /><label for="html-news">HTML News</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              value="css_news"
+              id="css-news"
+              name="newsletter"
+            />
+            <label for="css-news">CSS News</label>
+          </div>
+
+          <div class="last-div">
+            <input
+              type="checkbox"
+              value="javascript_news"
+              id="js-news"
+              name="newsletter"
+            />
+            <label for="js-news">JavaScript News</label>
+          </div>
+
+          <label class="newsletter-label">NewsLetter format</label>
+
+          <div>
+            <input
+              type="radio"
+              id="html"
+              value="html"
+              name="news_format"
+              checked
+            />
+            <label for="html">HTML</label>
+          </div>
+
+          <div class="last-div">
+            <input
+              type="radio"
+              id="plain-text"
+              value="plain_text"
+              name="news_format"
+            />
+            <label for="plain-text">Plain text</label>
+          </div>
+
+          <label for="other-topics" class="newsletter-label"
+            >Other topics you'd like to hear about</label
+          >
+          <textarea name="other_topics" id="other-topics"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
     <footer>
       <p>Copyright The Code Review</p>
     </footer>

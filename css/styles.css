@@ -86,7 +86,7 @@ label {
 /*Newsletter section styles*/
 
 input[type="text"]:last-child {
-  width: 50%;
+  width: 40%;
   margin-bottom: 2rem;
 }
 
@@ -135,4 +135,23 @@ footer p {
   font-style: italic;
   text-align: center;
   color: #a5a5a5;
+}
+
+/*styles for tablets and desktop computers*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .contact-info label {
+    width: 25%;
+    margin-right: 5%;
+  }
+  .contact-info > input,
+  #state {
+    display: inline;
+    width: 69%;
+  }
 }
